@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>d3ff246eb8c94737a3cb06497e7385ff</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="analyze-ab-test-results" class="cell markdown">
+<h1>Analyze A/B Test Results</h1>
+<p>This project will assure you have mastered the subjects covered in the statistics lessons. We have organized the current notebook into the following sections:</p>
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#probability">Part I - Probability</a></li>
+<li><a href="#ab_test">Part II - A/B Test</a></li>
+<li><a href="#regression">Part III - Regression</a></li>
+<li><a href="#finalcheck">Final Check</a></li>
+<li><a href="#submission">Submission</a></li>
+</ul>
+<p>Specific programming tasks are marked with a <strong>ToDo</strong> tag.</p>
+<p><a id='intro'></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>A/B tests are very commonly performed by data analysts and data scientists. For this project, you will be working to understand the results of an A/B test run by an e-commerce website. Your goal is to work through this notebook to help the company understand if they should:</p>
+<ul>
+<li>Implement the new webpage,</li>
+<li>Keep the old webpage, or</li>
+<li>Perhaps run the experiment longer to make their decision.</li>
+</ul>
+<p>Each <strong>ToDo</strong> task below has an associated quiz present in the classroom. Though the classroom quizzes are <strong>not necessary</strong> to complete the project, they help ensure you are on the right track as you work through the project, and you can feel more confident in your final submission meeting the <a href="https://review.udacity.com/#!/rubrics/1214/view">rubric</a> specification.</p>
+<blockquote>
+<p><strong>Tip</strong>: Though it's not a mandate, students can attempt the classroom quizzes to ensure statistical numeric values are calculated correctly in many cases.</p>
+</blockquote>
+<p><a id='probability'></a></p>
+<h2 id="part-i---probability">Part I - Probability</h2>
+<p>To get started, let's import our libraries.</p>
+</section>
+<div class="cell code" data-execution_count="2">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#We are setting the seed to assure you get the same answers on quizzes as we set up</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>random.seed(<span class="dv">42</span>)</span></code></pre></div>
+</div>
+<section id="todo-11" class="cell markdown">
+<h3>ToDo 1.1</h3>
+<p>Now, read in the <code>ab_data.csv</code> data. Store it in <code>df</code>. Below is the description of the data, there are a total of 5 columns:</p>
+<center>
+
+|Data columns|Purpose|Valid values|
+| ------------- |:-------------| -----:|
+|user_id|Unique ID|Int64 values|
+|timestamp|Time stamp when the user visited the webpage|-|
+|group|In the current A/B experiment, the users are categorized into two broad groups. <br>The `control` group users are expected to be served with `old_page`; and `treatment` group users are matched with the `new_page`. <br>However, **some inaccurate rows** are present in the initial data, such as a `control` group user is matched with a `new_page`. |`['control', 'treatment']`|
+|landing_page|It denotes whether the user visited the old or new webpage.|`['old_page', 'new_page']`|
+|converted|It denotes whether the user decided to pay for the company's product. Here, `1` means yes, the user bought the product.|`[0, 1]`|
+</center>
+<p>Use your dataframe to answer the questions in Quiz 1 of the classroom.</p>
+<blockquote>
+<p><strong>Tip</strong>: Please save your work regularly.</p>
+</blockquote>
+<p><strong>a.</strong> Read in the dataset from the <code>ab_data.csv</code> file and take a look at the top few rows here:</p>
+</section>
+<div class="cell code" data-execution_count="3">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;ab_data.csv&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>851104</td>
+      <td>2017-01-21 22:11:48.556739</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>804228</td>
+      <td>2017-01-12 08:01:45.159739</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>661590</td>
+      <td>2017-01-11 16:55:06.154213</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>853541</td>
+      <td>2017-01-08 18:28:03.143765</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>864975</td>
+      <td>2017-01-21 01:52:26.210827</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>b.</strong> Use the cell below to find the number of rows in the dataset.</p>
+</div>
+<div class="cell code" data-execution_count="4">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.shape[<span class="dv">0</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<pre><code>294478</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>c.</strong> The number of unique users in the dataset.</p>
+</div>
+<div class="cell code" data-execution_count="5">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.user_id.nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>290584</code></pre>
+</div>
+</div>
+<div class="cell markdown" data-collapsed="true">
+<p><strong>d.</strong> The proportion of users converted.</p>
+</div>
+<div class="cell code" data-execution_count="6">
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.converted.<span class="bu">sum</span>()<span class="op">/</span>df.user_id.nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<pre><code>0.12126269856564711</code></pre>
+</div>
+</div>
+<div class="cell markdown" data-collapsed="true">
+<p><strong>e.</strong> The number of times when the "group" is <code>treatment</code> but "landing_page" is not a <code>new_page</code>.</p>
+</div>
+<div class="cell code" data-execution_count="7">
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mistaken_1 <span class="op">=</span> df.query(<span class="st">&#39;group == &quot;treatment&quot;and landing_page == &quot;old_page&quot;&#39;</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mistaken_1.shape[<span class="dv">0</span>]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>mistaken_2 <span class="op">=</span> df.query(<span class="st">&#39;group == &quot;control&quot;and landing_page == &quot;new_page&quot;&#39;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>mistaken_2.shape[<span class="dv">0</span>]</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>mistaken_1.shape[<span class="dv">0</span>] <span class="op">+</span> mistaken_2.shape[<span class="dv">0</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<pre><code>3893</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>f.</strong> Do any of the rows have missing values?</p>
+</div>
+<div class="cell code" data-execution_count="8">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#no missing values!</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+<pre><code>user_id         0
+timestamp       0
+group           0
+landing_page    0
+converted       0
+dtype: int64</code></pre>
+</div>
+</div>
+<section id="todo-12" class="cell markdown">
+<h3>ToDo 1.2</h3>
+<p>In a particular row, the <strong>group</strong> and <strong>landing_page</strong> columns should have either of the following acceptable values:</p>
+<table>
+<thead>
+<tr class="header">
+<th>user_id</th>
+<th>timestamp</th>
+<th>group</th>
+<th>landing_page</th>
+<th>converted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>XXXX</td>
+<td>XXXX</td>
+<td><code>control</code></td>
+<td><code>old_page</code></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>XXXX</td>
+<td>XXXX</td>
+<td><code>treatment</code></td>
+<td><code>new_page</code></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>It means, the <code>control</code> group users should match with <code>old_page</code>; and <code>treatment</code> group users should matched with the <code>new_page</code>.</p>
+<p>However, for the rows where <code>treatment</code> does not match with <code>new_page</code> or <code>control</code> does not match with <code>old_page</code>, we cannot be sure if such rows truly received the new or old wepage.</p>
+<p>Use <strong>Quiz 2</strong> in the classroom to figure out how should we handle the rows where the group and landing_page columns don't match?</p>
+<p><strong>a.</strong> Now use the answer to the quiz to create a new dataset that meets the specifications from the quiz. Store your new dataframe in <strong>df2</strong>.</p>
+</section>
+<div class="cell code" data-execution_count="9">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove the inaccurate rows, and store the result in a new dataframe df2</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#make a copy</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df.copy()</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co">#drop mistaken_1 &amp; mistaken_2 query</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>df2.drop(mistaken_1.index, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>df2.drop(mistaken_2.index, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="10">
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Double Check all of the incorrect rows were removed from df2 - </span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Output of the statement below should be 0</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df2[((df2[<span class="st">&#39;group&#39;</span>] <span class="op">==</span> <span class="st">&#39;treatment&#39;</span>) <span class="op">==</span> (df2[<span class="st">&#39;landing_page&#39;</span>] <span class="op">==</span> <span class="st">&#39;new_page&#39;</span>)) <span class="op">==</span> <span class="va">False</span>].shape[<span class="dv">0</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+<pre><code>0</code></pre>
+</div>
+</div>
+<section id="todo-13" class="cell markdown">
+<h3>ToDo 1.3</h3>
+<p>Use <strong>df2</strong> and the cells below to answer questions for <strong>Quiz 3</strong> in the classroom.</p>
+</section>
+<div class="cell markdown">
+<p><strong>a.</strong> How many unique <strong>user_id</strong>s are in <strong>df2</strong>?</p>
+</div>
+<div class="cell code" data-execution_count="11">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df2.user_id.nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+<pre><code>290584</code></pre>
+</div>
+</div>
+<div class="cell markdown" data-collapsed="true">
+<p><strong>b.</strong> There is one <strong>user_id</strong> repeated in <strong>df2</strong>. What is it?</p>
+</div>
+<div class="cell code" data-execution_count="12">
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df2[df2[<span class="st">&#39;user_id&#39;</span>].duplicated()]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2893</th>
+      <td>773192</td>
+      <td>2017-01-14 02:55:59.590927</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>c.</strong> Display the rows for the duplicate <strong>user_id</strong>?</p>
+</div>
+<div class="cell code" data-execution_count="13">
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df2[df2[<span class="st">&#39;user_id&#39;</span>] <span class="op">==</span> <span class="dv">773192</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="13">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1899</th>
+      <td>773192</td>
+      <td>2017-01-09 05:37:58.781806</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2893</th>
+      <td>773192</td>
+      <td>2017-01-14 02:55:59.590927</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>d.</strong> Remove <strong>one</strong> of the rows with a duplicate <strong>user_id</strong>, from the <strong>df2</strong> dataframe.</p>
+</div>
+<div class="cell code" data-execution_count="14">
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove one of the rows with a duplicate user_id..</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Hint: The dataframe.drop_duplicates() may not work in this case because the rows with duplicate user_id are not entirely identical. </span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df2.drop(<span class="dv">2893</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="15">
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check again if the row with a duplicate user_id is deleted or not</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df2[df2[<span class="st">&#39;user_id&#39;</span>] <span class="op">==</span> <span class="dv">773192</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="15">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1899</th>
+      <td>773192</td>
+      <td>2017-01-09 05:37:58.781806</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="todo-14" class="cell markdown">
+<h3>ToDo 1.4</h3>
+<p>Use <strong>df2</strong> in the cells below to answer the quiz questions related to <strong>Quiz 4</strong> in the classroom.</p>
+<p><strong>a.</strong> What is the probability of an individual converting regardless of the page they receive?<br><br></p>
+<blockquote>
+<p><strong>Tip</strong>: The probability you'll compute represents the overall "converted" success rate in the population and you may call it <span class="math inline"><em>p</em><sub><em>p</em><em>o</em><em>p</em><em>u</em><em>l</em><em>a</em><em>t</em><em>i</em><em>o</em><em>n</em></sub></span>.</p>
+</blockquote>
+</section>
+<div class="cell code" data-execution_count="16">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df2.converted.mean()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="16">
+<pre><code>0.11959708724499628</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>b.</strong> Given that an individual was in the <code>control</code> group, what is the probability they converted?</p>
+</div>
+<div class="cell code" data-execution_count="17">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>control_prob <span class="op">=</span> df2.query(<span class="st">&quot;group == &#39;control&#39;&quot;</span>)[<span class="st">&#39;converted&#39;</span>].mean()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>control_prob</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>0.1203863045004612</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>c.</strong> Given that an individual was in the <code>treatment</code> group, what is the probability they converted?</p>
+</div>
+<div class="cell code" data-execution_count="18">
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>treatment_prob <span class="op">=</span> df2.query(<span class="st">&quot;group == &#39;treatment&#39;&quot;</span>)[<span class="st">&#39;converted&#39;</span>].mean()</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>treatment_prob</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<pre><code>0.11880806551510564</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Tip</strong>: The probabilities you've computed in the points (b). and (c). above can also be treated as conversion rate. Calculate the actual difference (<code>obs_diff</code>) between the conversion rates for the two groups. You will need that later.</p>
+</blockquote>
+</div>
+<div class="cell code" data-execution_count="19">
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the actual difference (obs_diff) between the conversion rates for the two groups.</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>obs_diff <span class="op">=</span> treatment_prob <span class="op">-</span> control_prob</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>obs_diff</span></code></pre></div>
+<div class="output execute_result" data-execution_count="19">
+<pre><code>-0.0015782389853555567</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>d.</strong> What is the probability that an individual received the new page?</p>
+</div>
+<div class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>df2.query(<span class="st">&#39;landing_page == &quot;new_page&quot;&#39;</span>).shape[<span class="dv">0</span>]<span class="op">/</span>df2.shape[<span class="dv">0</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>0.5000619442226688</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>e.</strong> Consider your results from parts (a) through (d) above, and explain below whether the new <code>treatment</code> group users lead to more conversions.</p>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Your answer goes here.</strong></p>
+</blockquote>
+<p>The new page actually led to a lower conversion rate than the old page. However, the difference appears to be negligible.</p>
+</div>
+<div class="cell markdown">
+<p><a id='ab_test'></a></p>
+<h2 id="part-ii---ab-test">Part II - A/B Test</h2>
+<p>Since a timestamp is associated with each event, you could run a hypothesis test continuously as long as you observe the events.</p>
+<p>However, then the hard questions would be:</p>
+<ul>
+<li>Do you stop as soon as one page is considered significantly better than another or does it need to happen consistently for a certain amount of time?<br />
+</li>
+<li>How long do you run to render a decision that neither page is better than another?</li>
+</ul>
+<p>These questions are the difficult parts associated with A/B tests in general.</p>
+<h3 id="todo-21">ToDo 2.1</h3>
+<p>For now, consider you need to make the decision just based on all the data provided.</p>
+<blockquote>
+<p>Recall that you just calculated that the "converted" probability (or rate) for the old page is <em>slightly</em> higher than that of the new page (ToDo 1.4.c).</p>
+</blockquote>
+<p>If you want to assume that the old page is better unless the new page proves to be definitely better at a Type I error rate of 5%, what should be your null and alternative hypotheses (<strong><span class="math inline"><em>H</em><sub>0</sub></span></strong> and <strong><span class="math inline"><em>H</em><sub>1</sub></span></strong>)?</p>
+<p>You can state your hypothesis in terms of words or in terms of <strong><span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span></strong> and <strong><span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span></strong>, which are the "converted" probability (or rate) for the old and new pages respectively.</p>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your answer here.</strong></p>
+</blockquote>
+<p><span class="math display"><em>H</em>0 : <em>P</em><em>o</em><em>l</em><em>d</em> = <em>P</em><em>n</em><em>e</em><em>w</em></span> <span class="math display"><em>H</em>1 : <em>P</em><em>n</em><em>e</em><em>w</em> &gt; <em>P</em><em>o</em><em>l</em><em>d</em></span></p>
+<hr />
+<p><span class="math display"><em>H</em>0 : <em>P</em><em>o</em><em>l</em><em>d</em> − <em>P</em><em>n</em><em>e</em><em>w</em> = 0</span> <span class="math display"><em>H</em>1 : <em>P</em><em>n</em><em>e</em><em>w</em> − <em>P</em><em>o</em><em>l</em><em>d</em> &gt; 0</span></p>
+</div>
+<section id="todo-22---null-hypothesis-h_0-testing" class="cell markdown">
+<h3>ToDo 2.2 - Null Hypothesis <span class="math inline"><em>H</em><sub>0</sub></span> Testing</h3>
+<p>Under the null hypothesis <span class="math inline"><em>H</em><sub>0</sub></span>, assume that <span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span> and <span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span> are equal. Furthermore, assume that <span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span> and <span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span> both are equal to the <strong>converted</strong> success rate in the <code>df2</code> data regardless of the page. So, our assumption is: <br><br> <center> <span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span> = <span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span> = <span class="math inline"><em>p</em><sub><em>p</em><em>o</em><em>p</em><em>u</em><em>l</em><em>a</em><em>t</em><em>i</em><em>o</em><em>n</em></sub></span> </center></p>
+<p>In this section, you will:</p>
+<ul>
+<li><p>Simulate (bootstrap) sample data set for both groups, and compute the "converted" probability <span class="math inline"><em>p</em></span> for those samples.</p></li>
+<li><p>Use a sample size for each group equal to the ones in the <code>df2</code> data.</p></li>
+<li><p>Compute the difference in the "converted" probability for the two samples above.</p></li>
+<li><p>Perform the sampling distribution for the "difference in the converted probability" between the two simulated-samples over 10,000 iterations; and calculate an estimate.</p></li>
+</ul>
+<p>Use the cells below to provide the necessary parts of this simulation. You can use <strong>Quiz 5</strong> in the classroom to make sure you are on the right track.</p>
+</section>
+<div class="cell markdown">
+<p><strong>a.</strong> What is the <strong>conversion rate</strong> for <span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span> under the null hypothesis?</p>
+</div>
+<div class="cell code" data-execution_count="49">
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>p_new <span class="op">=</span> df2[<span class="st">&#39;converted&#39;</span>].mean()</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>p_new</span></code></pre></div>
+<div class="output execute_result" data-execution_count="49">
+<pre><code>0.11959708724499628</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>b.</strong> What is the <strong>conversion rate</strong> for <span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span> under the null hypothesis?</p>
+</div>
+<div class="cell code" data-execution_count="50">
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>p_old <span class="op">=</span> p_new</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>p_old</span></code></pre></div>
+<div class="output execute_result" data-execution_count="50">
+<pre><code>0.11959708724499628</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>c.</strong> What is <span class="math inline"><em>n</em><sub><em>n</em><em>e</em><em>w</em></sub></span>, the number of individuals in the treatment group? <br><br> <em>Hint</em>: The treatment group users are shown the new page.</p>
+</div>
+<div class="cell code" data-execution_count="51">
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>n_new <span class="op">=</span> df2.query(<span class="st">&quot;landing_page == &#39;new_page&#39;&quot;</span>).shape[<span class="dv">0</span>]</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>n_new</span></code></pre></div>
+<div class="output execute_result" data-execution_count="51">
+<pre><code>145310</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>d.</strong> What is <span class="math inline"><em>n</em><sub><em>o</em><em>l</em><em>d</em></sub></span>, the number of individuals in the control group?</p>
+</div>
+<div class="cell code" data-execution_count="52">
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>n_old <span class="op">=</span> df2.query(<span class="st">&quot;landing_page == &#39;old_page&#39;&quot;</span>).shape[<span class="dv">0</span>]</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>n_old</span></code></pre></div>
+<div class="output execute_result" data-execution_count="52">
+<pre><code>145274</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>e. Simulate Sample for the <code>treatment</code> Group</strong><br> Simulate <span class="math inline"><em>n</em><sub><em>n</em><em>e</em><em>w</em></sub></span> transactions with a conversion rate of <span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span> under the null hypothesis. <br><br> <em>Hint</em>: Use <code>numpy.random.choice()</code> method to randomly generate <span class="math inline"><em>n</em><sub><em>n</em><em>e</em><em>w</em></sub></span> number of values. <br> Store these <span class="math inline"><em>n</em><sub><em>n</em><em>e</em><em>w</em></sub></span> 1's and 0's in the <code>new_page_converted</code> numpy array.</p>
+</div>
+<div class="cell code" data-execution_count="53">
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate a Sample for the treatment Group</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>new_page_converted <span class="op">=</span> np.random.choice([<span class="dv">0</span>,<span class="dv">1</span>], n_new, p <span class="op">=</span> (p_new, <span class="dv">1</span> <span class="op">-</span> p_new))</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>new_page_converted</span></code></pre></div>
+<div class="output execute_result" data-execution_count="53">
+<pre><code>array([1, 1, 1, ..., 1, 1, 1])</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>f. Simulate Sample for the <code>control</code> Group</strong> <br> Simulate <span class="math inline"><em>n</em><sub><em>o</em><em>l</em><em>d</em></sub></span> transactions with a conversion rate of <span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span> under the null hypothesis. <br> Store these <span class="math inline"><em>n</em><sub><em>o</em><em>l</em><em>d</em></sub></span> 1's and 0's in the <code>old_page_converted</code> numpy array.</p>
+</div>
+<div class="cell code" data-execution_count="54">
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate a Sample for the control Group</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>old_page_converted <span class="op">=</span> np.random.choice([<span class="dv">0</span>,<span class="dv">1</span>], n_old, p <span class="op">=</span> (p_old, <span class="dv">1</span> <span class="op">-</span> p_old))</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>old_page_converted</span></code></pre></div>
+<div class="output execute_result" data-execution_count="54">
+<pre><code>array([1, 1, 1, ..., 1, 1, 1])</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>g.</strong> Find the difference in the "converted" probability <span class="math inline">(<em>p</em>′<sub><em>n</em><em>e</em><em>w</em></sub></span> - <span class="math inline"><em>p</em>′<sub><em>o</em><em>l</em><em>d</em></sub>)</span> for your simulated samples from the parts (e) and (f) above.</p>
+</div>
+<div class="cell code" data-execution_count="55">
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>new_page_converted.mean() <span class="op">-</span> old_page_converted.mean()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="55">
+<pre><code>0.0012202452312100043</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>h. Sampling distribution</strong> <br> Re-create <code>new_page_converted</code> and <code>old_page_converted</code> and find the <span class="math inline">(<em>p</em>′<sub><em>n</em><em>e</em><em>w</em></sub></span> - <span class="math inline"><em>p</em>′<sub><em>o</em><em>l</em><em>d</em></sub>)</span> value 10,000 times using the same simulation process you used in parts (a) through (g) above.</p>
+<p><br> Store all <span class="math inline">(<em>p</em>′<sub><em>n</em><em>e</em><em>w</em></sub></span> - <span class="math inline"><em>p</em>′<sub><em>o</em><em>l</em><em>d</em></sub>)</span> values in a NumPy array called <code>p_diffs</code>.</p>
+</div>
+<div class="cell code" data-execution_count="56">
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sampling distribution </span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>p_diffs <span class="op">=</span> []</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a sampling distribution of the difference in converts</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a><span class="co"># with bootstrapping</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>size <span class="op">=</span> df.shape[<span class="dv">0</span>]</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10000</span>):</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    b_samp <span class="op">=</span> df.sample(size, replace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>    new_page_converted <span class="op">=</span> np.random.choice([<span class="dv">0</span>,<span class="dv">1</span>], n_new, p <span class="op">=</span> (p_new, <span class="dv">1</span> <span class="op">-</span> p_new))</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>    old_page_converted <span class="op">=</span> np.random.choice([<span class="dv">0</span>,<span class="dv">1</span>], n_old, p <span class="op">=</span> (p_old, <span class="dv">1</span> <span class="op">-</span> p_old))</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>    p_diffs.append(new_page_converted.mean() <span class="op">-</span> old_page_converted.mean())</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p><strong>i. Histogram</strong><br> Plot a histogram of the <strong>p_diffs</strong>. Does this plot look like what you expected? Use the matching problem in the classroom to assure you fully understand what was computed here.<br><br></p>
+<p>Also, use <code>plt.axvline()</code> method to mark the actual difference observed in the <code>df2</code> data (recall <code>obs_diff</code>), in the chart.</p>
+<blockquote>
+<p><strong>Tip</strong>: Display title, x-label, and y-label in the chart.</p>
+</blockquote>
+</div>
+<div class="cell code" data-execution_count="57">
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>plt.hist(p_diffs)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_99716d62420543babad41743e1d40f2b/4982ed87a9dc2aefcddc171e1e6f579263e90151.png" /></p>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>j.</strong> What proportion of the <strong>p_diffs</strong> are greater than the actual difference observed in the <code>df2</code> data?</p>
+</div>
+<div class="cell code" data-execution_count="67">
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>p_diffs <span class="op">=</span> []</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>new_converted_simulation <span class="op">=</span> np.random.binomial(n_new, p_new, <span class="dv">10000</span>)<span class="op">/</span>n_new</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>old_converted_simulation <span class="op">=</span> np.random.binomial(n_old, p_old, <span class="dv">10000</span>)<span class="op">/</span>n_old</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>p_diffs <span class="op">=</span> new_converted_simulation <span class="op">-</span> old_converted_simulation</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>obs_diff <span class="op">=</span> treatment_prob <span class="op">-</span> control_prob</span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>low_prob <span class="op">=</span> (p_diffs <span class="op">&lt;</span> obs_diff).mean()</span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>high_prob <span class="op">=</span> (p_diffs.mean() <span class="op">+</span> (p_diffs.mean() <span class="op">-</span> obs_diff) <span class="op">&lt;</span> p_diffs).mean()</span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a>plt.hist(p_diffs)<span class="op">;</span></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a>plt.axvline(obs_diff, color<span class="op">=</span><span class="st">&#39;red&#39;</span>)<span class="op">;</span></span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a>plt.axvline(p_diffs.mean() <span class="op">+</span> (p_diffs.mean() <span class="op">-</span> obs_diff), color<span class="op">=</span><span class="st">&#39;red&#39;</span>)<span class="op">;</span></span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-16"><a href="#cb48-16" aria-hidden="true" tabindex="-1"></a>p_val <span class="op">=</span> low_prob <span class="op">+</span> high_prob</span>
+<span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p_val)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>0.2049
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_99716d62420543babad41743e1d40f2b/c915e7b00c55d32f76ccf86f42399e9413a2bffd.png" /></p>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>k.</strong> Please explain in words what you have just computed in part <strong>j</strong> above.</p>
+<ul>
+<li>What is this value called in scientific studies?<br />
+</li>
+<li>What does this value signify in terms of whether or not there is a difference between the new and old pages? <em>Hint</em>: Compare the value above with the "Type I error rate (0.05)".</li>
+</ul>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your answer here.</strong></p>
+</blockquote>
+<p>In J, we calculated the p-value. Also, the calculated p-value is above 0.05, which means we do not have evidence to reject the null hypothesis</p>
+</div>
+<div class="cell markdown">
+<p><strong>l. Using Built-in Methods for Hypothesis Testing</strong><br> We could also use a built-in to achieve similar results. Though using the built-in might be easier to code, the above portions are a walkthrough of the ideas that are critical to correctly thinking about statistical significance.</p>
+<p>Fill in the statements below to calculate the:</p>
+<ul>
+<li><code>convert_old</code>: number of conversions with the old_page</li>
+<li><code>convert_new</code>: number of conversions with the new_page</li>
+<li><code>n_old</code>: number of individuals who were shown the old_page</li>
+<li><code>n_new</code>: number of individuals who were shown the new_page</li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="21">
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="co"># number of conversions with the old_page</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>convert_old <span class="op">=</span> df2.query(<span class="st">&#39;group == &quot;control&quot;&#39;</span>)[<span class="st">&#39;converted&#39;</span>].<span class="bu">sum</span>()</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="co"># number of conversions with the new_page</span></span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>convert_new <span class="op">=</span> df2.query(<span class="st">&#39;group == &quot;treatment&quot;&#39;</span>)[<span class="st">&#39;converted&#39;</span>].<span class="bu">sum</span>()</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a><span class="co"># number of individuals who were shown the old_page</span></span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a>n_old <span class="op">=</span> df2.query(<span class="st">&#39;landing_page == &quot;old_page&quot;&#39;</span>).shape[<span class="dv">0</span>]</span>
+<span id="cb50-11"><a href="#cb50-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-12"><a href="#cb50-12" aria-hidden="true" tabindex="-1"></a><span class="co"># number of individuals who received new_page</span></span>
+<span id="cb50-13"><a href="#cb50-13" aria-hidden="true" tabindex="-1"></a>n_new <span class="op">=</span> df2.query(<span class="st">&#39;landing_page == &quot;new_page&quot;&#39;</span>).shape[<span class="dv">0</span>]</span>
+<span id="cb50-14"><a href="#cb50-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-15"><a href="#cb50-15" aria-hidden="true" tabindex="-1"></a>convert_old, convert_new, n_old, n_new</span></code></pre></div>
+<div class="output execute_result" data-execution_count="21">
+<pre><code>(17489, 17264, 145274, 145310)</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>m.</strong> Now use <code>sm.stats.proportions_ztest()</code> to compute your test statistic and p-value. <a href="https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportions_ztest.html">Here</a> is a helpful link on using the built in.</p>
+<p>The syntax is:</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="ex">proportions_ztest</span><span class="er">(</span><span class="ex">count_array,</span> nobs_array, alternative=<span class="st">&#39;larger&#39;</span><span class="kw">)</span></span></code></pre></div>
+<p>where,</p>
+<ul>
+<li><p><code>count_array</code> = represents the number of "converted" for each group</p></li>
+<li><p><code>nobs_array</code> = represents the total number of observations (rows) in each group</p></li>
+<li><p><code>alternative</code> = choose one of the values from <code>[‘two-sided’, ‘smaller’, ‘larger’]</code> depending upon two-tailed, left-tailed, or right-tailed respectively.</p>
+<blockquote>
+<p><strong>Hint</strong>: <br> It's a two-tailed if you defined <span class="math inline"><em>H</em><sub>1</sub></span> as <span class="math inline">(<em>p</em><sub><em>n</em><em>e</em><em>w</em></sub>=<em>p</em><sub><em>o</em><em>l</em><em>d</em></sub>)</span>. <br> It's a left-tailed if you defined <span class="math inline"><em>H</em><sub>1</sub></span> as <span class="math inline">(<em>p</em><sub><em>n</em><em>e</em><em>w</em></sub>&lt;<em>p</em><sub><em>o</em><em>l</em><em>d</em></sub>)</span>. <br> It's a right-tailed if you defined <span class="math inline"><em>H</em><sub>1</sub></span> as <span class="math inline">(<em>p</em><sub><em>n</em><em>e</em><em>w</em></sub>&gt;<em>p</em><sub><em>o</em><em>l</em><em>d</em></sub>)</span>.</p>
+</blockquote></li>
+</ul>
+<p>The built-in function above will return the z_score, p_value.</p>
+<hr />
+<h3 id="about-the-two-sample-z-test">About the two-sample z-test</h3>
+<p>Recall that you have plotted a distribution <code>p_diffs</code> representing the difference in the "converted" probability <span class="math inline">(<em>p</em>′<sub><em>n</em><em>e</em><em>w</em></sub>−<em>p</em>′<sub><em>o</em><em>l</em><em>d</em></sub>)</span> for your two simulated samples 10,000 times.</p>
+<p>Another way for comparing the mean of two independent and normal distribution is a <strong>two-sample z-test</strong>. You can perform the Z-test to calculate the Z_score, as shown in the equation below:</p>
+<p><span class="math display">$$
+Z_{score} = \frac{ (p{'}_{new}-p{'}_{old}) - (p_{new}  -  p_{old})}{ \sqrt{ \frac{\sigma^{2}_{new} }{n_{new}} + \frac{\sigma^{2}_{old} }{n_{old}}  } }
+$$</span></p>
+<p>where,</p>
+<ul>
+<li><span class="math inline"><em>p</em>′</span> is the "converted" success rate in the sample</li>
+<li><span class="math inline"><em>p</em><sub><em>n</em><em>e</em><em>w</em></sub></span> and <span class="math inline"><em>p</em><sub><em>o</em><em>l</em><em>d</em></sub></span> are the "converted" success rate for the two groups in the population.</li>
+<li><span class="math inline"><em>σ</em><sub><em>n</em><em>e</em><em>w</em></sub></span> and <span class="math inline"><em>σ</em><sub><em>n</em><em>e</em><em>w</em></sub></span> are the standard deviation for the two groups in the population.</li>
+<li><span class="math inline"><em>n</em><sub><em>n</em><em>e</em><em>w</em></sub></span> and <span class="math inline"><em>n</em><sub><em>o</em><em>l</em><em>d</em></sub></span> represent the size of the two groups or samples (it's same in our case)</li>
+</ul>
+<blockquote>
+<p>Z-test is performed when the sample size is large, and the population variance is known. The z-score represents the distance between the two "converted" success rates in terms of the standard error.</p>
+</blockquote>
+<p>Next step is to make a decision to reject or fail to reject the null hypothesis based on comparing these two values:</p>
+<ul>
+<li><span class="math inline"><em>Z</em><sub><em>s</em><em>c</em><em>o</em><em>r</em><em>e</em></sub></span></li>
+<li><span class="math inline"><em>Z</em><sub><em>α</em></sub></span> or <span class="math inline"><em>Z</em><sub>0.05</sub></span>, also known as critical value at 95% confidence interval. <span class="math inline"><em>Z</em><sub>0.05</sub></span> is 1.645 for one-tailed tests, and 1.960 for two-tailed test. You can determine the <span class="math inline"><em>Z</em><sub><em>α</em></sub></span> from the z-table manually.</li>
+</ul>
+<p>Decide if your hypothesis is either a two-tailed, left-tailed, or right-tailed test. Accordingly, reject OR fail to reject the null based on the comparison between <span class="math inline"><em>Z</em><sub><em>s</em><em>c</em><em>o</em><em>r</em><em>e</em></sub></span> and <span class="math inline"><em>Z</em><sub><em>α</em></sub></span>. We determine whether or not the <span class="math inline"><em>Z</em><sub><em>s</em><em>c</em><em>o</em><em>r</em><em>e</em></sub></span> lies in the "rejection region" in the distribution. In other words, a "rejection region" is an interval where the null hypothesis is rejected iff the <span class="math inline"><em>Z</em><sub><em>s</em><em>c</em><em>o</em><em>r</em><em>e</em></sub></span> lies in that region.</p>
+<blockquote>
+<p>Hint:<br> For a right-tailed test, reject null if <span class="math inline"><em>Z</em><sub><em>s</em><em>c</em><em>o</em><em>r</em><em>e</em></sub></span> &gt; <span class="math inline"><em>Z</em><sub><em>α</em></sub></span>. <br> For a left-tailed test, reject null if <span class="math inline"><em>Z</em><sub><em>s</em><em>c</em><em>o</em><em>r</em><em>e</em></sub></span> &lt; <span class="math inline"><em>Z</em><sub><em>α</em></sub></span>.</p>
+</blockquote>
+<p>Reference:</p>
+<ul>
+<li>Example 9.1.2 on this <a href="https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Introductory_Statistics_(Shafer_and_Zhang)/09%3A_Two-Sample_Problems/9.01%3A_Comparison_of_Two_Population_Means-_Large_Independent_Samples">page</a>, courtesy www.stats.libretexts.org</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>Tip</strong>: You don't have to dive deeper into z-test for this exercise. <strong>Try having an overview of what does z-score signify in general.</strong></p>
+</blockquote>
+</div>
+<div class="cell code" data-execution_count="22">
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ToDo: Complete the sm.stats.proportions_ztest() method arguments</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>z_score, p_value <span class="op">=</span> sm.stats.proportions_ztest(np.array([convert_new, convert_old]),np.array([n_new, n_old]), alternative <span class="op">=</span> <span class="st">&#39;larger&#39;</span>)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z_score, p_value)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>-1.31092419842 0.905058312759
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>n.</strong> What do the z-score and p-value you computed in the previous question mean for the conversion rates of the old and new pages? Do they agree with the findings in parts <strong>j.</strong> and <strong>k.</strong>?<br><br></p>
+<blockquote>
+<p><strong>Tip</strong>: Notice whether the p-value is similar to the one computed earlier. Accordingly, can you reject/fail to reject the null hypothesis? It is important to correctly interpret the test statistic and p-value.</p>
+</blockquote>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your answer here.</strong></p>
+</blockquote>
+<p>z-score and p-value agree with the findings and so we cannot reject the null hypothesis</p>
+</div>
+<div class="cell markdown">
+<p><a id='regression'></a></p>
+<h3 id="part-iii---a-regression-approach">Part III - A regression approach</h3>
+<h3 id="todo-31">ToDo 3.1</h3>
+<p>In this final part, you will see that the result you achieved in the A/B test in Part II above can also be achieved by performing regression.<br><br></p>
+<p><strong>a.</strong> Since each row in the <code>df2</code> data is either a conversion or no conversion, what type of regression should you be performing in this case?</p>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your answer here.</strong></p>
+</blockquote>
+<p>Logistic regression</p>
+</div>
+<div class="cell markdown">
+<p><strong>b.</strong> The goal is to use <strong>statsmodels</strong> library to fit the regression model you specified in part <strong>a.</strong> above to see if there is a significant difference in conversion based on the page-type a customer receives. However, you first need to create the following two columns in the <code>df2</code> dataframe:</p>
+<ol>
+<li><code>intercept</code> - It should be <code>1</code> in the entire column.</li>
+<li><code>ab_page</code> - It's a dummy variable column, having a value <code>1</code> when an individual receives the <strong>treatment</strong>, otherwise <code>0</code>.</li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="49">
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">&#39;intercept&#39;</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">&#39;ab_page&#39;</span>] <span class="op">=</span> pd.get_dummies(df2[<span class="st">&#39;group&#39;</span>])[<span class="st">&#39;treatment&#39;</span>]</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>df2.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="49">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+      <th>ab_page</th>
+      <th>new_page</th>
+      <th>intercept</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>851104</td>
+      <td>2017-01-21 22:11:48.556739</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>804228</td>
+      <td>2017-01-12 08:01:45.159739</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>661590</td>
+      <td>2017-01-11 16:55:06.154213</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>853541</td>
+      <td>2017-01-08 18:28:03.143765</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>864975</td>
+      <td>2017-01-21 01:52:26.210827</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>c.</strong> Use <strong>statsmodels</strong> to instantiate your regression model on the two columns you created in part (b). above, then fit the model to predict whether or not an individual converts.</p>
+</div>
+<div class="cell code" data-execution_count="50">
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>lo <span class="op">=</span> sm.Logit(df2[<span class="st">&#39;converted&#39;</span>], df2[[<span class="st">&#39;intercept&#39;</span>, <span class="st">&#39;ab_page&#39;</span>]])</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> lo.fit()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Optimization terminated successfully.
+         Current function value: 0.366118
+         Iterations 6
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>d.</strong> Provide the summary of your model below, and use it as necessary to answer the following questions.</p>
+</div>
+<div class="cell code" data-execution_count="53">
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co">#summary() returns a AttributeError: module &#39;scipy.stats&#39; has no attribute &#39;chisqprob&#39; error. https://stackoverflow.com/questions/49814258/statsmodel-attributeerror-module-scipy-stats-has-no-attribute-chisqprob</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>result.summary2()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="53">
+<table class="simpletable">
+<tr>
+        <td>Model:</td>              <td>Logit</td>       <td>No. Iterations:</td>    <td>6.0000</td>   
+</tr>
+<tr>
+  <td>Dependent Variable:</td>     <td>converted</td>    <td>Pseudo R-squared:</td>    <td>0.000</td>   
+</tr>
+<tr>
+         <td>Date:</td>        <td>2022-12-27 09:37</td>       <td>AIC:</td>        <td>212780.3502</td>
+</tr>
+<tr>
+   <td>No. Observations:</td>       <td>290584</td>            <td>BIC:</td>        <td>212801.5095</td>
+</tr>
+<tr>
+       <td>Df Model:</td>              <td>1</td>         <td>Log-Likelihood:</td>  <td>-1.0639e+05</td>
+</tr>
+<tr>
+     <td>Df Residuals:</td>         <td>290582</td>          <td>LL-Null:</td>      <td>-1.0639e+05</td>
+</tr>
+<tr>
+      <td>Converged:</td>           <td>1.0000</td>           <td>Scale:</td>         <td>1.0000</td>   
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>       <th>Coef.</th>  <th>Std.Err.</th>     <th>z</th>      <th>P>|z|</th> <th>[0.025</th>  <th>0.975]</th> 
+</tr>
+<tr>
+  <th>intercept</th> <td>-1.9888</td>  <td>0.0081</td>  <td>-246.6690</td> <td>0.0000</td> <td>-2.0046</td> <td>-1.9730</td>
+</tr>
+<tr>
+  <th>ab_page</th>   <td>-0.0150</td>  <td>0.0114</td>   <td>-1.3109</td>  <td>0.1899</td> <td>-0.0374</td> <td>0.0074</td> 
+</tr>
+</table>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>e.</strong> What is the p-value associated with <strong>ab_page</strong>? Why does it differ from the value you found in <strong>Part II</strong>?<br><br></p>
+<p><strong>Hints</strong>:</p>
+<ul>
+<li>What are the null and alternative hypotheses associated with your regression model, and how do they compare to the null and alternative hypotheses in <strong>Part II</strong>?</li>
+<li>You may comment on if these hypothesis (Part II vs. Part III) are one-sided or two-sided.</li>
+<li>You may also compare the current p-value with the Type I error rate (0.05).</li>
+</ul>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your answer here.</strong></p>
+</blockquote>
+<p><strong>ANS</strong>: The null is also rejected, the p-value for ab_page is 0.1899 differs from the previous value because this is a two tailed test.</p>
+</div>
+<div class="cell markdown">
+<p><strong>f.</strong> Now, you are considering other things that might influence whether or not an individual converts. Discuss why it is a good idea to consider other factors to add into your regression model. Are there any disadvantages to adding additional terms into your regression model?</p>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your answer here.</strong></p>
+</blockquote>
+<p><strong>ANS</strong>: Adding other factors may be a good idea for the analysis as it appears that the new landing ab_page does not have an impact on user conversion.</p>
+</div>
+<div class="cell markdown">
+<p><strong>g. Adding countries</strong><br> Now along with testing if the conversion rate changes for different pages, also add an effect based on which country a user lives in.</p>
+<ol>
+<li><p>You will need to read in the <strong>countries.csv</strong> dataset and merge together your <code>df2</code> datasets on the appropriate rows. You call the resulting dataframe <code>df_merged</code>. <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.join.html">Here</a> are the docs for joining tables.</p></li>
+<li><p>Does it appear that country had an impact on conversion? To answer this question, consider the three unique values, <code>['UK', 'US', 'CA']</code>, in the <code>country</code> column. Create dummy variables for these country columns.</p>
+<blockquote>
+<p><strong>Hint:</strong> Use <code>pandas.get_dummies()</code> to create dummy variables. <strong>You will utilize two columns for the three dummy variables.</strong></p>
+</blockquote></li>
+</ol>
+<p>Provide the statistical output as well as a written response to answer this question.</p>
+</div>
+<div class="cell code" data-execution_count="55">
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the countries.csv &amp; join with the df2 dataframe</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>countries_df <span class="op">=</span> pd.read_csv(<span class="st">&#39;./countries.csv&#39;</span>)</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>df_new <span class="op">=</span> countries_df.set_index(<span class="st">&#39;user_id&#39;</span>).join(df2.set_index(<span class="st">&#39;user_id&#39;</span>), how<span class="op">=</span><span class="st">&#39;inner&#39;</span>)</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>df_new.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="55">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+      <th>ab_page</th>
+      <th>new_page</th>
+      <th>intercept</th>
+    </tr>
+    <tr>
+      <th>user_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>834778</th>
+      <td>UK</td>
+      <td>2017-01-14 23:08:43.304998</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>928468</th>
+      <td>US</td>
+      <td>2017-01-23 14:44:16.387854</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>822059</th>
+      <td>UK</td>
+      <td>2017-01-16 14:04:14.719771</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>711597</th>
+      <td>UK</td>
+      <td>2017-01-22 03:14:24.763511</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>710616</th>
+      <td>UK</td>
+      <td>2017-01-16 13:14:44.000513</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="56">
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the necessary dummy variables</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>df_new[<span class="st">&#39;intercept&#39;</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>df_new[[<span class="st">&#39;US&#39;</span>,<span class="st">&#39;UK&#39;</span>]] <span class="op">=</span> pd.get_dummies(df_new[<span class="st">&#39;country&#39;</span>])[[<span class="st">&#39;US&#39;</span>,<span class="st">&#39;UK&#39;</span>]]</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p><strong>h. Fit your model and obtain the results</strong><br> Though you have now looked at the individual factors of country and page on conversion, we would now like to look at an interaction between page and country to see if are there significant effects on conversion. <strong>Create the necessary additional columns, and fit the new model.</strong></p>
+<p>Provide the summary results (statistical output), and your conclusions (written response) based on the results.</p>
+<blockquote>
+<p><strong>Tip</strong>: Conclusions should include both statistical reasoning, and practical reasoning for the situation.</p>
+</blockquote>
+<blockquote>
+<p><strong>Hints</strong>:</p>
+</blockquote>
+<ul>
+<li>Look at all of p-values in the summary, and compare against the Type I error rate (0.05).</li>
+<li>Can you reject/fail to reject the null hypotheses (regression model)?</li>
+<li>Comment on the effect of page and country to predict the conversion.</li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="58">
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit your model, and summarize the results</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>sm.Logit(df_new[<span class="st">&#39;converted&#39;</span>], df_new[[<span class="st">&#39;intercept&#39;</span>, <span class="st">&#39;ab_page&#39;</span>, <span class="st">&#39;US&#39;</span>,<span class="st">&#39;UK&#39;</span>]]).fit().summary2()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Optimization terminated successfully.
+         Current function value: 0.366113
+         Iterations 6
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="58">
+<table class="simpletable">
+<tr>
+        <td>Model:</td>              <td>Logit</td>       <td>No. Iterations:</td>    <td>6.0000</td>   
+</tr>
+<tr>
+  <td>Dependent Variable:</td>     <td>converted</td>    <td>Pseudo R-squared:</td>    <td>0.000</td>   
+</tr>
+<tr>
+         <td>Date:</td>        <td>2022-12-27 09:42</td>       <td>AIC:</td>        <td>212781.1253</td>
+</tr>
+<tr>
+   <td>No. Observations:</td>       <td>290584</td>            <td>BIC:</td>        <td>212823.4439</td>
+</tr>
+<tr>
+       <td>Df Model:</td>              <td>3</td>         <td>Log-Likelihood:</td>  <td>-1.0639e+05</td>
+</tr>
+<tr>
+     <td>Df Residuals:</td>         <td>290580</td>          <td>LL-Null:</td>      <td>-1.0639e+05</td>
+</tr>
+<tr>
+      <td>Converged:</td>           <td>1.0000</td>           <td>Scale:</td>         <td>1.0000</td>   
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>       <th>Coef.</th>  <th>Std.Err.</th>     <th>z</th>     <th>P>|z|</th> <th>[0.025</th>  <th>0.975]</th> 
+</tr>
+<tr>
+  <th>intercept</th> <td>-2.0300</td>  <td>0.0266</td>  <td>-76.2488</td> <td>0.0000</td> <td>-2.0822</td> <td>-1.9778</td>
+</tr>
+<tr>
+  <th>ab_page</th>   <td>-0.0149</td>  <td>0.0114</td>   <td>-1.3069</td> <td>0.1912</td> <td>-0.0374</td> <td>0.0075</td> 
+</tr>
+<tr>
+  <th>US</th>        <td>0.0408</td>   <td>0.0269</td>   <td>1.5161</td>  <td>0.1295</td> <td>-0.0119</td> <td>0.0934</td> 
+</tr>
+<tr>
+  <th>UK</th>        <td>0.0506</td>   <td>0.0284</td>   <td>1.7835</td>  <td>0.0745</td> <td>-0.0050</td> <td>0.1063</td> 
+</tr>
+</table>
+</div>
+</div>
+<div class="cell markdown">
+<blockquote>
+<p><strong>Put your conclusion answer here.</strong></p>
+</blockquote>
+<p><strong>ANS</strong>: Based on the p-values above, it also does not appear as though country has a significant impact on conversion. There is no statistical significance to say the new page leads more conversions than old page.</p>
+<p>Ultimately, we do not have enough evidence to reject the null hypothesis based on any of our A/B testing. As a result, there is no reason to switch to the new page, when the old one performs just as well.</p>
+</div>
+<div class="cell markdown">
+<p><a id='finalcheck'></a></p>
+<h2 id="final-check">Final Check!</h2>
+<p>Congratulations! You have reached the end of the A/B Test Results project! You should be very proud of all you have accomplished!</p>
+<blockquote>
+<p><strong>Tip</strong>: Once you are satisfied with your work here, check over your notebook to make sure that it satisfies all the specifications mentioned in the rubric. You should also probably remove all of the "Hints" and "Tips" like this one so that the presentation is as polished as possible.</p>
+</blockquote>
+<p><a id='submission'></a></p>
+<h2 id="submission">Submission</h2>
+<p>You may either submit your notebook through the "SUBMIT PROJECT" button at the bottom of this workspace, or you may work from your local machine and submit on the last page of this project lesson.</p>
+<ol>
+<li><p>Before you submit your project, you need to create a .html or .pdf version of this notebook in the workspace here. To do that, run the code cell below. If it worked correctly, you should get a return code of 0, and you should see the generated .html file in the workspace directory (click on the orange Jupyter icon in the upper left).</p></li>
+<li><p>Alternatively, you can download this report as .html via the <strong>File</strong> &gt; <strong>Download as</strong> submenu, and then manually upload it into the workspace directory by clicking on the orange Jupyter icon in the upper left, then using the Upload button.</p></li>
+<li><p>Once you've done this, you can submit your project by clicking on the "Submit Project" button in the lower right here. This will create and submit a zip file with this .ipynb doc and the .html or .pdf version you created. Congratulations!</p></li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="59">
+<div class="sourceCode" id="cb64"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> subprocess <span class="im">import</span> call</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>call([<span class="st">&#39;python&#39;</span>, <span class="st">&#39;-m&#39;</span>, <span class="st">&#39;nbconvert&#39;</span>, <span class="st">&#39;Analyze_ab_test_results_notebook.ipynb&#39;</span>])</span></code></pre></div>
+<div class="output execute_result" data-execution_count="59">
+<pre><code>0</code></pre>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
